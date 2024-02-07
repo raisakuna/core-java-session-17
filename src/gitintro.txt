@@ -1,0 +1,11 @@
+Git
+=> Git is command line tool which helps us in .
+1.Sharing the code will be easy.
+2.Project Collaboration can be done easily.
+3. Disaster recovery is
+4. Reverting back to certain checkpoint will be easy
+5. Authentication - username and password, We don't have to authenticate each time we push our code. For the
+first time it asks for username and password, but next time it won't ask for authentication, git can recognize who
+the user is and if you are pulling or cloning the code from same laptop.
+6. We have to install ssh library in our laptop
+7. ssh-keygen, when we type in terminal it generates two keys-

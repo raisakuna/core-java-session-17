@@ -2,7 +2,7 @@ package objectbasic;
 
 public class Pen {
     /*
-    penBbrand;
+    penBrand;
     lengthOfPen; (5.11 - 5.51 inches)
     penColor; [red, multicolor, white, black, etc..]
     isCappedPen; (yes/No)
@@ -16,7 +16,7 @@ public class Pen {
     isWaterProof; (yes/No)
     barrelMaterial; [plastic, metal]
     weight;
-    length;
+
 
 */
 

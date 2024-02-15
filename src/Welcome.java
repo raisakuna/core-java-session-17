@@ -3,7 +3,7 @@ public class Welcome {
         String greetings= "Welcome to Session-1 training";
         System.out.println(greetings);
         for(int i =0; i <greetings.length(); i++){
-            System.out.print("=");
+
             System.out.println(i + " = " + greetings.charAt(i));
 
         }

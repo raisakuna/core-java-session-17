@@ -2,18 +2,18 @@ package objectbasic;
 
 public class Student {
    /*
-   firstName;
+    firstName;
+    middle name;
     lastName;
-    age;
     gender;
     idNumber;
     dateOfBirth;
-    contactInformation;
+    contactNumber;
     SSN;
     year;
     major;
     studentNationality [resident,international];
-    fees;
+    fee;
     advisor;
     gpa;
     email;
@@ -29,7 +29,7 @@ public class Student {
     EmergencyContact;
     photo;
     DisabilityStatus;
-    Veteran;
+    isVeteran;
 
 
 

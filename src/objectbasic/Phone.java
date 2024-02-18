@@ -4,13 +4,14 @@ public class Phone {
    /*
     model; [iphone, samsung]
     operatingSystem; [android, ios]
-    network: [GSM/CDMA]
-    batteryLevel;
+    network: (Gsm, Cdma)
+    battery;
     storageCapacity;
     NumberOfCamera;
     MainCameraQuality:
     SelfieCameraQuality:
     hasBluetooth; (yes/No)
+    bluetoothVersion;
     hasWifi; (yes/No)
     IstouchScreen; (yes/No)
     isFoldable; (yes/No)
@@ -29,8 +30,7 @@ public class Phone {
     ramSize;
     displayType; [LCD,Oled]
     sound:
-    bluetooth:
-    wifi:
+
 */
 
 }

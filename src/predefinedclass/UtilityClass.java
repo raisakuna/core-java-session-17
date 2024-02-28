@@ -45,5 +45,11 @@ public class UtilityClass {
 
         double v = twoDecimalFormat(12.232232);
         System.out.println(twoDecimalFormat(v));
+
+        // Conversion of format to EEE dd MMM
+        String time1 =  "2024-02-28";
+        String time2 =  "02-28-2024";
+        String time3 = "2024/02/28";
+
     }
 }

@@ -1,6 +1,6 @@
 package predefinedclass;
 
-import java.util.Random;
+
 
 public class MathClassAssignment {
     // abs, floor, ceil, round, max, min,  signum, sqrt,random

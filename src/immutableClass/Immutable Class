@@ -8,6 +8,8 @@ e.g. Wrapper class, String, etc.
 2. Make all the fields of the class private so that direct access to the data member is not allowed.
 3. Make all the fields of the class final so that it's value don't get changed after the object creation
 4. A parameterized constructor should initialize all the fields performing a a deep copy so that data member can't be modified with an object reference.
+5. Avoid providing setter methods to modify the state of the object after creation.
+
 
 # Main importance of creating immutable class
 1. Thread Safety: Since immutable object's state cannot be modified after creation, they can be shared safely across multiple

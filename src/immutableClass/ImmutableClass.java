@@ -4,11 +4,16 @@ package immutableClass;
 import java.util.ArrayList;
 import java.util.List;
 
+//  Declare the class as final, so it can't be extended by other class.
 public final class ImmutableClass {
+
+    // Make all the fields of the class private so that direct access to the data member is not allowed.
+    // Make all the fields of the class final so that it's value don't get changed after the object creation
             private final int intValue;
             private final String stringValue;
             private final List<String> stringList;
-
+// A parameterized constructor should initialize all the fields performing a
+// deep copy so that data member can't be modified with an object reference.
             public ImmutableClass(int intValue, String stringValue, List<String> stringList) {
                 this.intValue = intValue;
                 this.stringValue = stringValue;
@@ -41,6 +46,9 @@ public final class ImmutableClass {
                         ", stringList=" + stringList +
                         '}';
             }
+
+            // Avoid providing setter methods to modify the state of the object after creation.
+    //No Setter
         }
 
 

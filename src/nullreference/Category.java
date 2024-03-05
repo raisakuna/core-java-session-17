@@ -1,4 +1,4 @@
-package NullReference;
+package nullreference;
 
 import java.util.Objects;
 

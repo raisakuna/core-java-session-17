@@ -1,4 +1,4 @@
-package static_practice;
+package staticpractice;
 
 public class ShoppingMallApplication {
     public static void main(String[] args) {
@@ -13,6 +13,9 @@ public class ShoppingMallApplication {
 
         d3.personExited();
         d4.personExited();
+
+        // static functions are italic.
+        Door.getCount();
 
 /*
         System.out.println("Door 1 count : " + d1.getCount());

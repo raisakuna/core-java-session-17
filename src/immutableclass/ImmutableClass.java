@@ -1,4 +1,4 @@
-package immutableClass;
+package immutableclass;
 
 
 import java.util.ArrayList;

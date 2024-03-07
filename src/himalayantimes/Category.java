@@ -3,6 +3,11 @@ package himalayantimes;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * This class is used to create the Category object that is required by Post
+ * @author  Rai, Sakuna
+ * Date: 03-07-2024
+ */
 public class Category {
     /*  id - int
         name - String
@@ -27,6 +32,13 @@ public class Category {
                 id, name, isDisabled, order, isDeleted, createdAt, updated);
     }
 
+    /**
+     *  This is a parameterized Constructor.
+     * @param name This Category name should be String and should not be null
+     * @param isDisabled
+     * @param order This Category order is always positive number
+     * @param isDeleted
+     */
     public Category(String name, boolean isDisabled, int order, boolean isDeleted) {
         this.id = ++lastCategoryId;
         this.name = name;

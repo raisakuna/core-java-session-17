@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"himalayantimes","l":"Category"},{"p":"himalayantimes","l":"HimalayanTimesApplication"},{"p":"himalayantimes","l":"Post"}]

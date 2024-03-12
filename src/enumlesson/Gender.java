@@ -3,7 +3,7 @@ package enumlesson;
 import java.util.ArrayList;
 import java.util.EnumSet;
 
-/** Intoduced in Java 5, a special data type acts like a constant
+/** Introduced in Java 5, a special data type acts like a constant
  *  It is used when we  need a fixed set of pre-defined constant values. eg - days of the week, season of the year,
  *  4 suits in a deck of card (club, diamond, heart, spade)
  *  name of the planets, oceans

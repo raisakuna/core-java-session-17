@@ -10,8 +10,10 @@ public class DateFormatter {
     public static String convertToEEEddMMM(String time) {
         // Define input date formats
         String[] inputFormats = {"yyyy-MM-dd", "MM-dd-yyyy", "yyyy/MM/dd"};
+       // String  inputFormat ="yyyy-MM-dd";
         // Define output date format
         String outputFormat = "EEE dd MMM";
+        //Date date2= inputFormat
 
         for (String inputFormat : inputFormats) {
             DateFormat inputFormatter = new SimpleDateFormat(inputFormat, Locale.ENGLISH);
@@ -38,6 +40,7 @@ public class DateFormatter {
         System.out.println("Date1: " + convertToEEEddMMM(time1));
         System.out.println("Date2: " + convertToEEEddMMM(time2));
         System.out.println("Date3: " + convertToEEEddMMM(time3));
+        System.out.println("Date " + convertToEEEddMMM(time1));
     }
 
 }

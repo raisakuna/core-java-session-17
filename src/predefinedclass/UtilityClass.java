@@ -1,10 +1,8 @@
 package predefinedclass;
 
-import java.time.LocalDateTime;
-
 // Class that has only static method. Sometime called as Helper class
 // provide methods for executing certain functionalities within a program
-// that has private constructor()
+// that has private constructor() so that no instance of the class can be created outside the class
 //Methods of a utility are accessed via the class name.
 // eg. Math,
 public class UtilityClass {

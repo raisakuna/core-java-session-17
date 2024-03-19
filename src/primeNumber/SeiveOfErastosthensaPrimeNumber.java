@@ -1,6 +1,6 @@
 package primeNumber;
 
-// O(log(n))
+// O(Nlog(log(n)))
 public class SeiveOfErastosthensaPrimeNumber {
     public static void main(String[] args) {
         int n = 100; // Define the upper limit for prime numbers

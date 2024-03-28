@@ -48,4 +48,22 @@ public class Category {
         this.createdAt = LocalDate.now().format(DateTimeFormatter.ofPattern("MM-dd-yyyy"));
         this.updated = LocalDate.now().format(DateTimeFormatter.ofPattern("MM-dd-yyyy"));
     }
+
+    public Category(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Category(int id, String name, boolean isDisabled, int order) {
+        this(id,name);
+        this.isDisabled = isDisabled;
+        this.order = order;
+    }
+
+    public Category(int id, String name, boolean isDisabled, int order, boolean isDeleted, String createdAt, String updated) {
+        this(id,name,isDisabled,order);
+        this.isDeleted = isDeleted;
+        this.createdAt = createdAt;
+        this.updated = updated;
+    }
 }

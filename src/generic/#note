@@ -1,0 +1,28 @@
+Introduced in Java 5.
+Mainly used fo collections where parameter type for the Collection are specified
+
+Used for the following reasons
+1. Provide type safety
+    String []s = new String[3];
+    s[0] = "abc";
+    s[1] =1; // It will shows an error on compile time because we are storing only String value not the numeric
+
+    ArrayList s = new ArrayList();
+    s.add("abc");
+    s.add(1); // It won't shows an error
+
+
+2. Resolve type casting
+    String []s = new String[3];
+    s[0]="abc";
+    s[1] ="pqr";
+    String value = s[1] // It won't shows an error because "value" is also string and s[1] is also string
+    and it won't need any type casting in the above example
+    But
+    ArrayList a = new ArrayList();
+    a1.add("pqr");
+    String value=  a1.get[0]; -> will shows a CE because what we are doing here is storing string value with object
+
+    String value =(String)a1.get[0];
+
+

@@ -1,0 +1,59 @@
+#
+We cannot extend multiple class but we can implements as many as interface.
+Interface is same as like Class but the difference is it doesn't has its state.
+All of the function of interface are abstract even though they don't have keyword abstract.
+
+
+
+
+
+
+
+Abstract  keyword is used to achieve abstraction in java.
+
+Normally, parent class's object are not created.
+
+Only child class can call parent constructor if the parent class is abstract.
+
+#
+Abstraction is used mostly in case of Inheritance. Similarly, interface is used in inheritance.
+Interface doesn't have state, it only has method.
+
+ With abstract keyword in class, we can't create an instance of an abstract class
+ They may have parameterized constructor which is called by its subclasses
+ An abstract class's purpose is to define the behavior its subclasses are required to have.(inheritance)
+
+ #
+ Abstract method must be inside abstract class.
+ Abstract method doesn't have body implementation.
+ If Abstract class is inherited by other class then its' abstract method must be overridden.
+ We cannot make child a child class abstract because Abstract class are designed not to instantiate but
+ their child classes are meant to inherited them and instantiated into concrete object.
+
+  An abstract method cannot be declared a private, static  and synchronized.
+
+ extends-> is A -> Relationship
+
+ #
+ final keyword-> in Class-> no one can inherit this class
+                    state-> a constant value
+                    method -> function cannot be override. example-> date ->final getTime()
+
+
+
+#
+System.out.println(String.format("%02d",String.valueOf(10))); -> d ! =java.lang.String
+Here, %02d means-> if you have an integer 5, %02d will format it as "05".
+If you have 15, it will be "15", and if you have 123, it will remain "123",
+because it already exceeds the minimum width of 2.
+d means it is expecting decimal value integer.
+String.valueOf(10) -> converting 10 to String. So the above code has a runtime error.
+
+#
+Object class is also called magical class or cosmic class.
+Present inside java.lang -> we don't have to import it.
+
+
+
+
+

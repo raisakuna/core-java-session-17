@@ -1,5 +1,8 @@
+JVM doesn't understand generic,
 Introduced in Java 5.
-Mainly used fo collections where parameter type for the Collection are specified
+Mainly used for collections where parameter type for the Collection are specified.
+Whenever we say Generic-> it means an angle bracket.
+Remember ArrayList<>, Comparable<>, Comparator<>
 
 Used for the following reasons
 1. Provide type safety

@@ -1,4 +1,4 @@
-package interfaceindetails;
+package interfaceindetails_Comparator;
 
 /**
  * Normally parent class's object is not created

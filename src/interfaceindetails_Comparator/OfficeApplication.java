@@ -1,4 +1,4 @@
-package interfaceindetails;
+package interfaceindetails_Comparator;
 
 /**
  * With abstract keyword in class, we can't create an instance of an abstract class

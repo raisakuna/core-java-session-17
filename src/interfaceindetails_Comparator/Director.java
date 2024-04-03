@@ -1,4 +1,4 @@
-package interfaceindetails;
+package interfaceindetails_Comparator;
 
 public  class Director extends Manager {
     private int shares;

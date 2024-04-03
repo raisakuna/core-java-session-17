@@ -1,4 +1,4 @@
-package interfaceindetails;
+package interfaceindetails_Comparator;
 
 public class Manager extends Person implements Comparable<Manager> {
     private double bonus;

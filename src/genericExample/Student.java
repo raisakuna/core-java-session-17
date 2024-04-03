@@ -1,4 +1,4 @@
-package arrray;
+package genericExample;
 
 public class Student {
     private String name;

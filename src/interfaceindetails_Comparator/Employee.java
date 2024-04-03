@@ -1,4 +1,4 @@
-package interfaceindetails;
+package interfaceindetails_Comparator;
 
 import java.util.Objects;
 

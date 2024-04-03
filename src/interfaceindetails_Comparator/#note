@@ -2,6 +2,9 @@
 We cannot extend multiple class but we can implements as many as interface.
 Interface is same as like Class but the difference is it doesn't has its state.
 All of the function of interface are abstract even though they don't have keyword abstract.
+All the function inside interface are public by default. Because we cannot override private. Even though we don't define
+any accessor.
+
 
 
 
@@ -52,6 +55,9 @@ String.valueOf(10) -> converting 10 to String. So the above code has a runtime e
 #
 Object class is also called magical class or cosmic class.
 Present inside java.lang -> we don't have to import it.
+
+# USe Case of Interface
+
 
 
 

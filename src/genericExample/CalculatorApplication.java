@@ -16,6 +16,9 @@ public class CalculatorApplication {
         GenericPair<Double, Double> doublePair = new GenericPair<>(2.3,4.3);
         doublePair.getB();
 
-        GenericPair<Integer,Double> doubleLongPair = new GenericPair<>(2,3.4);
+        GenericPair<Integer,Double> integerDouble = new GenericPair<>(2,3.4);
+        GenericPair<Double,Long> doubleLongPair = new GenericPair<>(23.4,4L);
+
+
     }
 }

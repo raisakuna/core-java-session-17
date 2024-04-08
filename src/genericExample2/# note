@@ -1,0 +1,21 @@
+1.   l is arraylist of String
+    m1(ArrayList<String> l ){
+    l.add("a");
+    l.add(null);
+    l.add(10);  // CE
+}
+
+2. arraylist of anytime
+    m1(ArrayList<?> l){
+    l.add(10); // CE
+    l.add(10.5) // CE
+    l.add("A")  // CE
+    l.add(null) // is valid
+
+    }
+
+    This type of method is  for read only operation not for write.
+
+3.
+    m1(ArrayList<? extends x> l){
+    }

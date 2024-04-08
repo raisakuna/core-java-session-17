@@ -1,4 +1,4 @@
-package assignment;
+package assignment.assignment16;
 
 public class MinimumFinder {
     // Function to find minimum of two integers, using Comparable Interface

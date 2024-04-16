@@ -1,0 +1,81 @@
+# Logging: Getting message from application (Production Server) like success, fail, warning,etc.
+        : Monitor the process, find bugs from realtime environment
+
+# Tools: Log4j, Java Logging and Commons Logging
+
+# Log Messages Can be stored at different places
+    file        Database        Console     SMTP
+    .log        table           Sysout      Email
+* The most common way of storing those logging information is in .log file.
+   Console is used for development purpose.
+==========================================================================
+# If you want to implement Log4j, then we have three components to known.
+    1. Logger   2. Appender     3. Layout
+
+
+# 1.Logger: We have many classes in our projects like Repository, Service, Controller, Entity, Model,etc.
+     Entity and Model just has only some variables, getter and setter so it doesn't required Logger. but Repository,
+     Service and Controllers might need to check our code, so it needs Logger.
+     Assume we have more than 20 classes which required Logger.
+     * It is a base object in Log4J. It enables/activates Logging/Monitor of a class/process.
+
+     Class EmployeeController{
+     Logger log = LogManager.getLogger(EmployeeController.class);
+     }
+
+     * Do not create Logger object for Entity/DTO/POJO classes.
+     * Recommended for Controller/Services... etc.
+
+# Usually we have the following types  pre-defined methods (Priority method) exist in Logger object which prints message based on requirement.
+     FATAL (Logback doesn't have) : Environmental related issues (Database connection is closed
+     ERROR : Most widely used. Details about exception
+     WARN : App related messages
+     INFO : Most widely used. Current step
+     DEBUG : To print final result of a process/internal details
+     TRACE : to find messages from multiple stages/env/apps.
+
+ # In Java by default, ERROR, WARN and INFO level messages are logged. but we can changed them based on our requirements
+   and environments.
+  ************************************************
+
+# 2.Appender: Where do you want to store your data. File Appender, Database Appender, Console Appender, SMTP appender
+       * FileAppender   : write data to Log file (__.log) Mostly used
+       * ConsoleAppender: Print data at console
+       * JDBCAppender   : Store messages at Database table
+       * SMTPAppender   : Write message to Email
+       Projects can have multiple appenders.
+
+  *********************************************
+# 3. Layout: How do you want to represent your data- in xml format, html, json or pattern
+    pattern example: 2024:04:07 9:50 889 - EmployeeController - saveEmp() -INFO - Employee create
+                    date - which class? which method? - types of logging - message
+     * Default Layout (Message and NextLine)
+     * HTML Layout
+     * XML Layout
+     * Pattern (Most widely used)
+
+===============================================================
+
+
+
+# Spring Boot supports various logging frameworks, such as Logback, Log4j2 and Java Util Logging(JUL)
+1. Logback: A popular default framework. It offers a flexible configuration and good performance.
+2. Log4j2: Features such as asynchronous logging and support for various output formats.
+3. JUL: default logging framework included in the JAVA SE. Does not related to SpringBoot. If you want to update it,
+    you have to update Java SDK. It is less feature-rich than some third-party frameworks,
+     it is straight-forward and is a part of Java platform
+
+# SpringBoot comes with a default logging configuration as LogBack.  It provides balance between simplicity and flexibility.
+# If you want to customize the logging configuration, you can create your own logbak-spring.xml or logback.xml file
+  in the src/main/resources directory. When Spring Boot detects this file in your project, it will use it instead
+  of the default configuration.
+
+
+1. Easy to suppress all log records
+2. It can be directed to different handlers- displaying in the console, writing on a file
+3. Log records can be formatted in different ways- for example in plain text or XML
+4. The logging configuration is controlled by a configuration file.
+5. Both loggers and handlers can filter records. Filter cna discard boring log entries,
+   using any criteria supplied by the filter implementor
+6. It is easy to suppressed logs. For example you want to remove sout in program, then it will be more hectic to
+   remove all sout, but with logger you can easily remove

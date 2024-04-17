@@ -1,0 +1,27 @@
+RBI Bank is a class which has a account object named "John". John has 7000 dollars in his account
+It also has another two different class (objects) - ATM and GooglePay.
+RBI has two methods - deposit and withdraw. Both are run on different threads.
+ATM has withdraw method, GooglePay has deposit method.
+Assume if both withdraw (3000) and deposit (12000) are done at the same time, what would happen?
+
+Your calculation or financial institution should have 16000 in total. but you will see different value.
+Because when both threads start at the same time, your money don't get updated as you wish.
+ 7000 -3000 = 4000
+ 4000 + 12000 = 16000
+  but when both thread starts at the same time- your actual calculations happen as follow
+  7000 -3000 =4000
+  7000 +12000 =19000 this is not the correct calculation as we expected.
+ So to remove such calculation's error we used synchronized keyword before the method name we run,
+ It lock the object for a while once the method executed completely.
+ For example when deposit() method runs, it will lock the object until it executed completely then only
+ another object will run
+ In the above example, it works perfectly fine for the same object.
+
+ =================================================================
+ But for two different objects, it should not hold another object functionality.
+ Example John and Adam are two different account object.
+  If John is depositing some money and on other hand Adam is withdrawing some money,
+  both thread should start simultaneously without affecting to each other. Instead of synchronizing  the 'withdraw'
+  and 'deposit' method in RBIBank class, we can synchronize the blocks inside these methods
+
+

@@ -1,0 +1,41 @@
+Thread is created by Java and they are given to operating system.
+OS manages the thread, starting thread, run thread and pause thread depend on CPU processing states.
+
+Threads are the fundamental building blocks, to support concurrency, in java application.
+They allow us to perform multiple tasks simultaneously within a single process.
+
+# Thread class implements the Runnable interface which has a single abstract method, the run method.
+# Each thread instance has some state-  threadgroup, name, priority, threadstatus, id
+# It has two constructor with no arguments and constructed by passing Runnable instance to it.
+
+# Why use?
+    1. instead of tying up the main thread, we can create additional threads to execute tasks that might take long time.
+    2. We can use multiple threads to process large amount of data, which can improve performance of data operations
+    3. Web server is good example of allowing multiple connections and requests handled simultaneously.
+
+
+******************************************************8888
+Thread Priority
+    value from 1 to 10.
+    3 pre-defined priorities included as constants.
+    Thread.MIN_PRIORITY =1 (Low)
+    Thread.NORM_PRIORITY =5 (default)
+    Thread.MAX_PRIORITY =10 (high) better chance of being scheduled over the lower-priority thread.
+
+
+Thread States
+    New
+    Runnable
+    Blocked  // Thread is not run once because of lack of CPU or we lock it
+    Waiting
+    Time Waiting
+    Terminated
+
+ # To understand Waiting and Time waiting -> Preemptive Scheduling.
+ Assume OS assign Each thread is given some certain amount of time to complete all task. (Example 10 seconds)
+ It will provide time slicing for each thread. If the whole task is not done within the time limit, then that
+ thread will send to either waiting state or timed waiting state. Once the CPU is free to call the thread again, then
+ it is waiting state. Timed waiting means
+
+
+ # Race Conditions of Thread

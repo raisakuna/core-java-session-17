@@ -1,4 +1,4 @@
-package concurrency_multithreading.bank;
+package assignment.assignment21;
 
 public class ATM extends Thread{
     RBIBank accntObject;

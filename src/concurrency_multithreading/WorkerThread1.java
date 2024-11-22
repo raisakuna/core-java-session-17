@@ -25,5 +25,7 @@ public class WorkerThread1 implements Runnable{
         Thread thread1 = new Thread(new WorkerThread1());
         thread1.start();
 
+        System.out.println("Executing main thread");
+
     }
 }

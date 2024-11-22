@@ -21,7 +21,7 @@ Because when both threads start at the same time, your money don't get updated a
  But for two different objects, it should not hold another object functionality.
  Example John and Adam are two different account object.
   If John is depositing some money and on other hand Adam is withdrawing some money,
-  both thread should start simultaneously without affecting to each other. Instead of synchronizing  the 'withdraw'
-  and 'deposit' method in RBIBank class, we can synchronize the blocks inside these methods
+  both thread should start simultaneously without affecting to each other.
+  The join() method is used to wait for both threads to finish before the program exits, ensuring that all operations are completed before ending the application.
 
 

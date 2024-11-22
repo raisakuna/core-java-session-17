@@ -3,17 +3,25 @@ package concurrency_multithreading.bank;
 public class BankApplication2DifferentAccount {
     public static void main(String[] args) {
         RBIBank johnAccount = new RBIBank(7000.00);
-        RBIBank karthikAccount = new RBIBank(10000);
+        RBIBank karthikAccount = new RBIBank(10000.00);
 
-        ATM ATMThread = new ATM(johnAccount);
+        // Create threads for different accounts
+        ATM atmThread = new ATM(johnAccount);
         GooglePay googlePayThread = new GooglePay(karthikAccount);
 
-        ATMThread.setName("ATM");
+        atmThread.setName("ATM");
         googlePayThread.setName("Google Pay");
 
-        ATMThread.start();
+        // Start the threads
+        atmThread.start();
         googlePayThread.start();
 
-
+        // Wait for both threads to complete
+        try {
+            atmThread.join();
+            googlePayThread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

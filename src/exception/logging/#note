@@ -27,7 +27,7 @@
      * Recommended for Controller/Services... etc.
 
 # Usually we have the following types  pre-defined methods (Priority method) exist in Logger object which prints message based on requirement.
-     FATAL (Logback doesn't have) : Environmental related issues (Database connection is closed
+     FATAL (Logback doesn't have) : Environmental related issues (Database connection is closed)
      ERROR : Most widely used. Details about exception
      WARN : App related messages
      INFO : Most widely used. Current step
